@@ -21,7 +21,7 @@ class Register extends Component {
 
 	onSubmit = () => {
 		if (this.state.code === 'roadto#1'){
-			fetch('http://localhost:3000/register', {
+			fetch('https://pure-badlands-13349.herokuapp.com/register', {
 				method: 'post',
 				headers: {'Content-Type': 'application/json'},
 				body: JSON.stringify({

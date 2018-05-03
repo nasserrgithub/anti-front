@@ -10,7 +10,7 @@ class WorldBoss extends Component {
 	}
 
 	componentDidMount() {
-	    fetch('http://localhost:3000/worldboss')
+	    fetch('https://pure-badlands-13349.herokuapp.com/worldboss')
 	      .then(response => response.json())
 	      .then(data => this.setState({participants: data}))
   	}
